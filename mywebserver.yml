@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: mywebserverslist
   become: yes
   tasks:
   - name: install webserver on ubuntu
