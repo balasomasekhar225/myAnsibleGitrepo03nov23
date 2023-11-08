@@ -11,4 +11,14 @@
     service:
       name: apache2
       state: started
-    when: ansible_os_family== "Debian"    
+    when: ansible_os_family== "Debian" 
+  - name: i wanto to install webser into redhat
+    dnf:
+     name: httpd
+     state: present
+    when: ansible_os_family== "RedHat"   
+  - name: i wanto to start webser into redhat
+    service:
+     name: httpd
+     state: started
+    when: ansible_os_family== "RedHat"  
