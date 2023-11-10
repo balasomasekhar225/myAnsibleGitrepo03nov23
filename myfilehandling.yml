@@ -12,6 +12,6 @@
       src: myindexfile
       dest: /var/www/html/index.html
   - name: copy index file into ansible node side
-    tenmplate:
+    template:
       src: myindex.j2
       dest: /var/www/html/index.html
