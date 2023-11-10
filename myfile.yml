@@ -1,0 +1,5 @@
+---
+ - name: i wanto to create a file
+   file:
+     path: /home/ubuntu/myfirstfile
+     state: touch
