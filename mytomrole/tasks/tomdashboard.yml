@@ -15,4 +15,4 @@
 - name: copy tom service into node side 
   template:
      src: template/mytomservice.j2
-     desc: /etc/systemd/system/tomcat.service
+     desc: nano /etc/systemd/system/tomcat.service
