@@ -13,6 +13,6 @@
     desc: nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
 
 - name: copy tom service into node side 
-    template:
-    src: template/mytomhostcontext.j2
-    desc: /etc/systemd/system/tomcat.service
+  template:
+     src: template/mytomhostcontext.j2
+     desc: /etc/systemd/system/tomcat.service
