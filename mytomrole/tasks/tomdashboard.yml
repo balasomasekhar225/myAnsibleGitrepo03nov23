@@ -14,5 +14,5 @@
 
 - name: copy tom service into node side 
   template:
-     src: template/mytomhostcontext.j2
+     src: template/mytomservice.j2
      desc: /etc/systemd/system/tomcat.service
