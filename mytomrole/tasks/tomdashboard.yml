@@ -3,10 +3,12 @@
   template:
     src: template/mytomuser.j2
     dest: /opt/tomcat/conf/tomcat-users.xml
+
 - name: copy context file
   template:
     src: template/mytocontext.j2
     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
 - name: copy host context file
   template:
     src: template/mytomhostcontext.j2
