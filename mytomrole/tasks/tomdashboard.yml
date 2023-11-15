@@ -6,7 +6,7 @@
 
 - name: copy context file
   template:
-    src: templates/mytocontext.j2
+    src: templates/mytomcontext.j2
     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: copy host context file
@@ -18,4 +18,3 @@
   template:
      src: templates/mytomservice.j2
      dest: /etc/systemd/system/tomcat.service
-     
